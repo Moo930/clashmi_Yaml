@@ -38,8 +38,8 @@ proxy-providers:
   机场名: {<<: *Anchor_PR, url: '订阅链接', override: {additional-prefix: '[机场名] '}}
 
 proxies:
-  - {name: DIRECT, type: direct}
-  - {name: REJECT, type: reject}
+  - {name: direct, type: direct}
+  - {name: reject, type: reject}
 
 
 # 以下为 链式代理 socks5 节点，如果要启用，请将前面的 # 去掉

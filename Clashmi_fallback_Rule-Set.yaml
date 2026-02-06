@@ -37,9 +37,9 @@ Anchor_CL: &Anchor_CL {type: http, interval: 86400, behavior: classical, format:
 proxy-providers:
   机场名: {<<: *Anchor_PR, url: '订阅链接', override: {additional-prefix: '[机场名] '}}
 
-proxies:
-  - {name: direct, type: direct}
-  - {name: reject, type: reject}
+# proxies:
+#  - {name: direct, type: direct}
+#  - {name: reject, type: reject}
 
 
 # 以下为 链式代理 socks5 节点，如果要启用，请将前面的 # 去掉
